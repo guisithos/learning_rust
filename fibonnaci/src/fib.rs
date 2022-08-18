@@ -26,14 +26,6 @@ fn main() {
 
     let old_time: DateTime<Utc> = Utc::now();
 
-    println!("fibonacci number: {}", fibonacci(guess, Zero::zero(), One::one()));
+    println!("Número de Fibonnaci: {}", fibonacci(guess, Zero::zero(), One::one()));
     let duration = Utc::now().signed_duration_since(old_time);
-
-    println!(
-        "{} µs",
-        match duration.num_microseconds() {
-            Some(value) => value,
-            _ => 0,
-        }
-    );
 }
