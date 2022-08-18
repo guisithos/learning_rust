@@ -14,10 +14,10 @@ fn fibonacci(number: u128, acc: BigUint, current: BigUint) -> BigUint {
 }
 fn main() {
     let mut guess = String::new();
-    println!("Fibonacci number:");
+    println!("Números de Fibonnaci:");
     io::stdin()
         .read_line(&mut guess)
-        .expect("Failed to read line");
+        .expect("Falha ao ler");
 
     let guess: u128 = match guess.trim().parse() {
         Ok(num) => num,
